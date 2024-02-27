@@ -1,65 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* garante que o padding não aumente o tamanho total dos elementos */
 }
 
-body{
-    height: 100vh;
-    background-color: #000000;
-    color: #F6F6F6;
+.menu{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    padding: 0 80px;
+    opacity: 1;
+    position: fixed;
 }
 
-strong{
-    color: #ff0303;
-}
-
-img{
-    border-radius: 5px;
-    width: 30%;
-    height: 30%;
-}
-
-.apresentacao{
-    margin: 10%;
-    /*Flexbox*/
+.menu_home{
     display: flex;
     align-items: center;
-    gap: 250px
+    height: 79px;
+    width: 79.7969px;
 }
 
-.apresentacao_conteudo{
-    width: 615px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+.menu_home_icon{
+    background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c46845952588bf44125a37117d4da32c.svg) no-repeat 50%/contain;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    width: 30px;
 }
 
-.apresentacao_links{
-    display: flex;
-    justify-content: space-between;
-}
-
-.apresentacao_conteudo_titulo{
-    font-size: 36px;
-    font-family: "Krona One", sans-serif;
-}
-
-.apresentacao_conteudo_paragrafo{
-    font-size: 24px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.apresentacao_links_botao{
-    width: 300px;
-    font-size: 24px;
-    border-radius: 15px;
-    text-align: center;   
-    background-color: #ff0303;
-    color: #ffff;
-    padding: 21.5px 0;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+.menu_nav{
+    height: 79px;
+    width: 714.141px;
 }
