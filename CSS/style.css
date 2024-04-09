@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 body{
@@ -12,21 +13,22 @@ body{
 }
 
 strong{
-    color: #ff0303;
+    color: #5b03ff;
 }
 
-img{
-    border-radius: 5px;
-    width: 30%;
-    height: 30%;
-}
+.apresentacao img {
+    border-radius: 10px; /* Arredondamento suave */
+    border: 2px solid #ffff; /* Contorno fino com a cor desejada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
 
 .apresentacao{
-    margin: 10%;
+    margin: 6%;
     /*Flexbox*/
     display: flex;
     align-items: center;
-    gap: 250px
+    gap: 200px
 }
 
 .apresentacao_conteudo{
@@ -34,11 +36,6 @@ img{
     display: flex;
     flex-direction: column;
     gap: 40px;
-}
-
-.apresentacao_links{
-    display: flex;
-    justify-content: space-between;
 }
 
 .apresentacao_conteudo_titulo{
@@ -51,15 +48,32 @@ img{
     font-family: "Montserrat", sans-serif;
 }
 
+.apresentacao_links_titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .apresentacao_links_botao{
     width: 300px;
     font-size: 24px;
     border-radius: 15px;
-    text-align: center;   
-    background-color: #ff0303;
+    text-align: center;
+    border: solid 2px;   
+    border-color: #5b03ff;
+    background-color: #000000;
     color: #ffff;
     padding: 21.5px 0;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+    margin: 5px;
 }
