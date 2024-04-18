@@ -11,6 +11,26 @@ body{
     color: #F6F6F6;
 }
 
+.menu{
+    padding: 2% 0% 0% 5%;
+}
+
+.menu_nav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 80px;
+
+}
+
+.menu_nav_link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #5b03ff;
+    text-decoration: none;
+}
+
 strong{
     color: #5b03ff;
 }
@@ -86,8 +106,4 @@ strong{
 
 .apresentacao_links_botao:hover{
     color: #5b03ff;
-}
-
-.rodape{
-
 }
