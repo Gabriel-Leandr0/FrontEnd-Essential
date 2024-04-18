@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --cor-primaria: #5b03ff;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #F6F6F6;
+
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-paragrafo: 'Montserrat', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +16,8 @@
 }
 
 body{
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
 }
 
 .menu{
@@ -24,27 +33,26 @@ body{
 }
 
 .menu_nav_link{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-paragrafo);
     font-size: 24px;
     font-weight: 600;
-    color: #5b03ff;
+    color: var(--cor-primaria);
     text-decoration: none;
 }
 
 strong{
-    color: #5b03ff;
+    color: var(--cor-primaria);
 }
 
 .foto_gabriel_leandro {
-    border-radius: 10px; /* Arredondamento suave */
-    border: 2px solid #ffff; /* Contorno fino com a cor desejada */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px;
+    border: 2px solid var(--cor-terciaria);
+   
   }
   
 
 .apresentacao{
     padding: 5%;
-    /*Flexbox*/
     display: flex;
     align-items: center;
     gap: 200px
@@ -59,17 +67,17 @@ strong{
 
 .apresentacao_conteudo_titulo{
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-titulo);
 }
 
 .apresentacao_conteudo_paragrafo{
     font-size: 22px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-paragrafo);
 }
 
 .apresentacao_links_titulo{
     font-size: 24px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-titulo);
     font-weight: 400;
 }
 
@@ -94,16 +102,16 @@ strong{
     border-radius: 15px;
     text-align: center;
     border: solid 2px;   
-    border-color: #5b03ff;
-    background-color: #000000;
-    color: #ffff;
+    border-color: var(--cor-primaria);
+    background-color:var(--cor-secundaria);
+    color: var(--cor-terciaria);
     padding: 21.5px 0;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-titulo);
     font-weight: 600;
     margin: 5px;
 }
 
 .apresentacao_links_botao:hover{
-    color: #5b03ff;
+    color: var(--cor-primaria);
 }
