@@ -34,7 +34,7 @@ body{
 
 .menu_nav_link{
     font-family: var(--fonte-paragrafo);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-primaria);
     text-decoration: none;
@@ -44,39 +44,32 @@ strong{
     color: var(--cor-primaria);
 }
 
-.foto_gabriel_leandro {
-    border-radius: 10px;
-    border: 2px solid var(--cor-terciaria);
-   
-  }
-  
-
 .apresentacao{
     padding: 5%;
     display: flex;
     align-items: center;
-    gap: 200px
+    gap: 82px
 }
 
 .apresentacao_conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao_conteudo_titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-titulo);
 }
 
 .apresentacao_conteudo_paragrafo{
-    font-size: 22px;
+    font-size: 1.37rem;
     font-family: var(--fonte-paragrafo);
 }
 
 .apresentacao_links_titulo{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-titulo);
     font-weight: 400;
 }
@@ -97,8 +90,8 @@ strong{
     display: flex;
     justify-content: center;
     gap: 10px;
-    width: 300px;
-    font-size: 24px;
+    width: 50%;
+    font-size: 1.5rem;
     border-radius: 15px;
     text-align: center;
     border: solid 2px;   
@@ -114,4 +107,36 @@ strong{
 
 .apresentacao_links_botao:hover{
     color: var(--cor-primaria);
+}
+
+.apresentacao_imagem {
+    width: 35%;
+    border-radius: 10px;
+    border: 2px solid var(--cor-terciaria);
+   
+  }
+
+@media (max-width: 1200px){
+
+    .menu{
+        padding: 5%;
+    }
+
+    .menu_nav{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo{
+        width: auto;
+    }
+
+    .apresentacao_imagem{
+        width: 75%;
+    }
+
 }
